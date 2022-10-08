@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
+  margin-left: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-search {
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  border: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:focus-visible {
+  outline: none;
+} 
+.searchbox {
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 8px;
+}
+.Add-Container {
+  display: grid;
+  grid-template-columns: 580px 580px;
+  grid-auto-rows: 1fr;
+  gap: 30px;
+}
+.card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  box-shadow: 5px 10px 8px 5px #888888;
+  border-radius: 10px;
+  /* background-color:beige; */
+}
+.text-primary {
+  color: rgb(86, 84, 84);
+  margin-top: 3px;;
+}
+.card-header {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: oblique;
+  color: purple;
+}
+.image-container {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  margin: 10px;
+ justify-content: center;
+}
+.button {
+  background-color: thistle;
+  border: 2px solid thistle;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
+.button:active {
+  background-color: gray;
+  border: none;
+}
+img {
+  position: absolute;
+  max-width: 300px;
+  max-height: 300px;
+}
+.description {
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: purple;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
